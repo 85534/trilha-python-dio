@@ -7,8 +7,8 @@ menu = """
 
 => """
 
-saldo = 0
-limite = 500
+saldo = 3000
+limite = 2500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
@@ -20,7 +20,7 @@ while True:
     if opcao == "d":
         valor = float(input("Informe o valor do depósito: "))
 
-        if valor > 0:
+        if valor > 2700:
             saldo += valor
             extrato += f"Depósito: R$ {valor:.2f}\n"
 
